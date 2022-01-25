@@ -1,0 +1,10 @@
+# Detecting-Breast-Cancer
+Detecting Breast Cancer with Binary Algorithms on 3500 Instances and 150 attributes by working in P Y THON programming on specific Machine Learning Algorithms 
+My approach for this project was divided into 2 part as the tasks recommends. The codes are clear, however, here is all I did for this project.
+
+I have chosen the SVM (Support Vector Machine) for classifying the dataset. The dataset itself had label, so the model could learn from it and give up our desirable output(Y) or the label. To classify the patients, we can say ether their label is 0 (not having cancer) or 1 (having cancer). The SVM model in my python code could determine with 74% accuracy the related test fraction of dataset. The output of various patients has been extracted till here.
+After this part, I just considered to be able to fetch the patients I want and extract their details such as features (X or input), their label and their Patient ID. So, here in my code for example I am going through the patient with Patient ID=75. The extracted label based on the SVM model is 1 so we had understood that this patient is prone to have cancer. All the labels in the dataset related to this patient is also 1. So, unfortunately this patient is badly considered as a malignant one. But as there can still be a chance of life and we cannot get it from no one, I can propose a way in which the accuracy of our guess can be defined which is explained in the Task 2 part.
+
+In this task, I just applied the SVM model in whole dataset and got all the output labeled data in the data frame. So, for a specific patient which I chose Patient with Patient ID=75, the number of 1s and 0s are defined the patient should be classified as malignant or benign by now.
+I thought about the mathematical approach derived from sigmoid function and the statistical point of view in which we can calculate the weight of each label for this patient using this equation :
+h= 1/1+EXPz and z= (total number of a label / total number of data )
